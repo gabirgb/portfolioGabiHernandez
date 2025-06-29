@@ -1,0 +1,103 @@
+/* Typografía
+font-family: "Montserrat", sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =========================
+Reset
+============================ */
+
+* {
+   margin: 0;
+   padding: 0; 
+}
+
+img {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* =========================
+FIN Reset
+============================ */
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    padding: 0.1em;
+}
+
+a.active, h1 span {
+    color: rgb(255, 251, 0);
+}
+
+a:hover {
+    background-color: rgb(255,251,0);
+    color: rgb(33, 33, 33);
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+input.boton {
+    background-color:  rgb(255,251,0) ;
+    padding: 10px;
+    color: rgb(33, 33, 33);
+    border: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+label {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+.logo {
+    height: 60px;
+}
+
+.carrousel {
+    height: 250px;
+    width: 250px;
+}
+
+.portfolio {
+    height: 250px;
+    width: 250px;
+}
+
+a:hover.portfolio {
+    background-color:  rgb(255,251,0);    
+}
+
+p.home {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+img.side-image {
+    height: 617px;
+}
