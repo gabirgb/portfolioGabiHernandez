@@ -4,62 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css" >
-    <title>Gabi Hernandez</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>Contact - Gabi Hernandez</title>
 </head>
+
 <body>
     <header>
-        <img src="../assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" class="logo" />
-        <nav>
-            <ul>
-                <li><a href="../index.html" title="home" target="_self">home</a></li>
-                <li><a href="./aboutMe.html" title="about me" target="_self">about me</a></li>
-                <li><a href="./aboutMyWork.html" title="about my work" target="_self">about my work</a></li>
-                <li><a href="./portfolio.html" title="portfolio" target="_self">portfolio</a></li>
-                <li><a href="#" title="contact" target="_self" class="active">contact</a></li>
-            </ul>
+        <nav class="navbar fixed-top navbar-expand-lg navbarGabi">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <img src="../assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" width="30" height="24"
+                        class="d-inline-block align-text-middle">Gabi Hernandez
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse collapse-gabi" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" title="home" href="../index.html">home</a>
+                        <a class="nav-link" title="about me" href="../pages/aboutMe.html">about me</a>
+                        <a class="nav-link" title="about my work" href="../pages/aboutMyWork.html">about my work</a>
+                        <a class="nav-link" title="portfolio" href="../pages/portfolio.html">portfolio</a>
+                        <a class="nav-link active" title="contact" href="#" aria-current="page">contact</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>Lorem ipsum dolor <span>sit amet</span></h1>
-        <section>
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
-        </section>        
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
+        <section class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <h1>Lorem ipsum dolor <span>sit amet</span></h1>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
+                </div>
+                <div class="col-1"></div>
+            </div>
         </section>
-        <section>
-            <form action="contact.html" method="post">
-                <label for="nomape">name</label><br />
-                <input type="text" name="nomape" id="nomape" required><br /><br />
-                
-                <label for="mail">mail</label><br />
-                <input type="email" name="mail" id="mail" required><br /><br />
-
-                <label for="mensaje">mensaje</label><br />
-                <textarea name="mensaje" id="mensaje" required></textarea><br /><br />
-
-                <input type="button" value="send" class="boton">
-            </form>
+        <section class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
+                </div>
+                <div class="col-1"></div>
+            </div>
         </section>
-        <footer>
-            <a href="mailto:info@gabihernandez.com.ar" target="_blank">info@gabihernandez.com.ar</a>
-            <a href="https://www.instagram.com/gabienelmundo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-cloud"></i></a>
-        </footer>
+        <section class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <form action="contact.html" method="post" class="form-floating formGabi">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingNomApe"
+                                placeholder="First and last name">
+                            <label for="floatingNomApe">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInputValue"
+                                placeholder="name@example.com" value="name@example.com">
+                            <label for="floatingInputValue">Email</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control textareaGabi" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                        </div>
+                        <div class="form-floating">
+                            <button type="button" class="btn btnGabi">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </section>
     </main>
+
+    <footer class="container-fluid fixed-bottom">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 text-center">
+                <a title="Send me an Email" href="mailto:info@gabihernandez.com.ar" target="_blank"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <a title="Instagram - Gabi en el Mundo" href="https://www.instagram.com/gabienelmundo/"
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a title="Facebook Profile - Available soon" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a title="Tienda Nube - Available soon" href="#" target="_blank"><i class="fa-solid fa-cloud"></i></a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </footer>
+    <!-- JS Booststrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

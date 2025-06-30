@@ -151,6 +151,30 @@ p {
     color: white;
 }
 
+.formGabi {
+    margin: 50px auto 100px;
+    text-align: right;
+}
+
+.formGabi .form-control:focus {
+    box-shadow: 0 0 0 .25rem rgba(255,255,255,.25);
+}
+
+.textareaGabi {
+     height: 100px !important;
+}
+
+.btnGabi {
+    border: 1px solid rgb(255,251,0);
+    color:  rgb(255,251,0);
+    margin: 20px 0px;
+}
+
+.btnGabi:hover {
+    background-color: rgb(255,251,0);
+    color: rgb(33,33,33);
+}
+
 .portfolio {
     height: 250px;
     width: 250px;
