@@ -3,32 +3,12 @@ font-family: "Montserrat", sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* =========================
-Reset
-============================ */
-
-* {
-   margin: 0;
-   padding: 0; 
-}
-
-img {
-    border: none;
-}
-
-li {
-    list-style: none;
-}
-
-/* =========================
-FIN Reset
-============================ */
 
 a {
     text-decoration: none;
     background-color: transparent;
-    color: rgb(255, 255, 255);
-    font-size: 0.8em;
+    color: white;
+    font-size: 1em;
     padding: 0.1em;
 }
 
@@ -44,7 +24,7 @@ a:hover {
 body {
     background-color: rgb(33, 33, 33);
     font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 20px;
 }
 
@@ -58,6 +38,7 @@ input.boton {
 h1 {
     font-size: 2.5em;
     font-weight: 300;
+    margin: 100px auto;
 }
 
 h2 {
@@ -70,18 +51,86 @@ label {
     font-style: italic;
 }
 
+nav, footer {
+    background-color: rgb(33, 33, 33);
+}
+
+.navbarGabi div .navbar-toggler:focus {
+    border: 1px solid rgb(255,251,0);
+    box-shadow: none;
+}
+
+.navbarGabi div .navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbarGabi .nav-link {
+    color: white;
+    padding-left: 10px;
+}
+
+.navbarGabi .nav-link.active {
+    color: rgb(255,251,0);
+    font-weight: bold;
+}
+
+.navbarGabi .nav-link:hover {
+    color: rgb(33,33,33);
+}
+
+.navbarGabi div .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+}
+
+.collapse-gabi {
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    padding: 5px;
+}
+
+footer a {
+    margin: 5px;
+}
+
+footer a:hover {
+    border-radius: 5px;
+}
+
 p {
     font-size: 0.8em;
     line-height: 1.8em;
 }
 
 .logo {
-    height: 60px;
+    font-size: 1em;
+    color: white;
 }
 
-.carrousel {
-    height: 250px;
-    width: 250px;
+.logo:hover {
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+.logo:focus {
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.carouselGabi {
+    padding-bottom: 80px;
+}
+
+.carouselGabi img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .portfolio {
@@ -96,8 +145,10 @@ a:hover.portfolio {
 p.home {
     font-size: 1em;
     line-height: 1.8em;
+    margin-bottom: 80px;
 }
 
 img.side-image {
     height: 617px;
 }
+
