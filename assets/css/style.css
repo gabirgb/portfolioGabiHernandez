@@ -127,7 +127,7 @@ p {
     padding-bottom: 80px;
 }
 
-.carouselGabi img {
+.carouselGabi img, .side-image {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -146,9 +146,5 @@ p.home {
     font-size: 1em;
     line-height: 1.8em;
     margin-bottom: 80px;
-}
-
-img.side-image {
-    height: 617px;
 }
 
