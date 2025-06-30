@@ -4,48 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css" >
-    <title>Gabi Hernandez</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>Portfolio - Gabi Hernandez</title>
 </head>
+
 <body>
     <header>
-        <img src="../assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" class="logo" />
-        <nav>
-            <ul>
-                <li><a href="../index.html" title="home" target="_self">home</a></li>
-                <li><a href="./aboutMe.html" title="about me" target="_self">about me</a></li>
-                <li><a href="./aboutMyWork.html" title="about my work" target="_self">about my work</a></li>
-                <li><a href="#" title="portfolio" target="_self" class="active">portfolio</a></li>
-                <li><a href="./contact.html" title="contact" target="_self">contact</a></li>
-            </ul>
+        <nav class="navbar fixed-top navbar-expand-lg navbarGabi">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <img src="../assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" width="30" height="24"
+                        class="d-inline-block align-text-middle">Gabi Hernandez
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse collapse-gabi" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" title="home" href="../index.html">home</a>
+                        <a class="nav-link" title="about me" href="../pages/aboutMe.html">about me</a>
+                        <a class="nav-link" title="about my work" href="../pages/aboutMyWork.html">about my work</a>
+                        <a class="nav-link active" title="portfolio" href="../pages/portfolio.html"
+                            aria-current="page">portfolio</a>
+                        <a class="nav-link" title="contact" href="../pages/contact.html">contact</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>Lorem ipsum dolor <span>sit amet quis</span> nostrud</h1>
-        <section>
-            <a href="#" title=""><img src="../assets/images/01.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/02.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/03.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/04.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/05.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/06.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/07.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/08.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/09.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/01.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/02.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/03.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/04.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/05.png" alt="" class="portfolio" /></a>
-            <a href="#" title=""><img src="../assets/images/06.png" alt="" class="portfolio" /></a>
+        <section class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <h1>Lorem ipsum dolor <span>sit amet quis</span> nostrud</h1>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi card-gabi">
+                        <img src="../assets/images/01.png" class="card-img" alt="Portfolio 1">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/02.png" class="card-img" alt="Portfolio 2">
+                        <div class="card-img-overlay card-img-overlay-gabi">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/03.png" class="card-img" alt="Portfolio 3">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/04.png" class="card-img" alt="Portfolio 4">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/05.png" class="card-img" alt="Portfolio 5">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/06.png" class="card-img" alt="Portfolio 6">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/07.png" class="card-img" alt="Portfolio 7">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/08.png" class="card-img" alt="Portfolio 8">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                    <!-- Card inicio -->
+                    <div class="card text-bg-dark card-gabi">
+                        <img src="../assets/images/09.png" class="card-img" alt="Portfolio 9">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <!-- Card fin -->
+                </div>
+                <div class="col-1"></div>
+            </div>
         </section>
-        <footer>
-            <a href="mailto:info@gabihernandez.com.ar" target="_blank">info@gabihernandez.com.ar</a>
-            <a href="https://www.instagram.com/gabienelmundo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fa-solid fa-cloud"></i></a>
-        </footer>
     </main>
+    <footer class="container-fluid fixed-bottom">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 text-center">
+                <a title="Send me an Email" href="mailto:info@gabihernandez.com.ar" target="_blank"><i
+                        class="fa-solid fa-envelope"></i></a>
+                <a title="Instagram - Gabi en el Mundo" href="https://www.instagram.com/gabienelmundo/"
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a title="Facebook Profile - Available soon" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a title="Tienda Nube - Available soon" href="#" target="_blank"><i class="fa-solid fa-cloud"></i></a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </footer>
+    <!-- JS Booststrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

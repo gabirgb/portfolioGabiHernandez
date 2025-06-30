@@ -139,6 +139,18 @@ p {
     font-style: italic;
 }
 
+.card-gabi {
+    margin: 20px;
+}
+
+.card-gabi img {
+    filter: brightness(40%);    
+}
+
+.card-gabi .card-title, .card-gabi .card-text {
+    color: white;
+}
+
 .portfolio {
     height: 250px;
     width: 250px;
