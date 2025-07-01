@@ -129,6 +129,7 @@ p {
 
 .carouselGabi {
     padding-bottom: 80px;
+    max-width: 500px;
 }
 
 .carouselGabi img, .side-image {
@@ -194,8 +195,23 @@ p.home {
     margin-bottom: 80px;
 }
 
-/* MEDIA QUERIES -------
-Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* MEDIA QUERIES -------*/
 
+/* -lg Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .collapse-gabi {
+    box-shadow: none;
+    }
+
+    .carouselGabi {
+        margin-top: 10vh;
+    }
+}
+
+/* -xl X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card-gabi div p {
+        line-height: 1.5em;
+        font-size: 0.7em;
+    }
 }
