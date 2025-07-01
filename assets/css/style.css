@@ -4,6 +4,10 @@ font-family: "Montserrat", sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+/* CSS Mobile first
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
 a {
     text-decoration: none;
     background-color: transparent;
@@ -190,3 +194,8 @@ p.home {
     margin-bottom: 80px;
 }
 
+/* MEDIA QUERIES -------
+Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
