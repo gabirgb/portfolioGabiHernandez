@@ -1,217 +1,111 @@
+@charset "UTF-8";
 /* Typografía
 font-family: "Montserrat", sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* CSS Mobile first
 X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap */
-
-a {
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
-    font-size: 1em;
-    padding: 0.1em;
-}
-
-a.active, h1 span {
-    color: rgb(255, 251, 0);
-}
-
-a:hover {
-    background-color: rgb(255,251,0);
-    color: rgb(33, 33, 33);
-}
-
 body {
-    background-color: rgb(33, 33, 33);
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 20px;
+  background-color: rgb(33, 33, 33);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+body a {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  padding: 0.1em;
+}
+body a:hover {
+  background-color: rgb(255, 251, 0);
+  color: rgb(33, 33, 33);
+}
+body a.active {
+  color: rgb(255, 251, 0);
+}
+body a.portfolio {
+  background-color: rgb(255, 251, 0);
+}
+body h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 100px auto 50px;
+}
+body h1 span {
+  color: rgb(255, 251, 0);
+}
+body h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+body header nav {
+  background-color: rgb(33, 33, 33);
+}
+body header nav div a {
+  font-size: 1em;
+  color: white;
+}
+body header nav div a:hover {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+body header nav div a:focus {
+  color: white;
+}
+body header nav div a img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+body header nav div .navbar-toggler {
+  border: 1px solid white;
+}
+body header nav div .navbar-toggler:focus {
+  border: 1px solid rgb(255, 251, 0);
+  box-shadow: none;
+}
+body header nav div .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+}
+body header nav div .navbar-collapse {
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
+}
+body header nav .navbar-nav .nav-link {
+  color: white;
+  padding-left: 10px;
+}
+body header nav .navbar-nav .nav-link.active {
+  color: rgb(255, 251, 0);
+  font-weight: bold;
+}
+body header nav .navbar-nav .nav-linkhover {
+  color: rgb(33, 33, 33);
+}
+body label {
+  font-size: 0.8em;
+  font-style: italic;
+}
+body footer {
+  background-color: rgb(33, 33, 33);
+  padding: 5px;
+}
+body footer a {
+  margin: 5px;
+}
+body footer a:hover {
+  border-radius: 5px;
+}
+body p {
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+body p.home {
+  font-size: 1em;
+  line-height: 1.8em;
+  margin-bottom: 80px;
 }
 
-input.boton {
-    background-color:  rgb(255,251,0) ;
-    padding: 10px;
-    color: rgb(33, 33, 33);
-    border: none;
-}
-
-h1 {
-    font-size: 2.5em;
-    font-weight: 300;
-    margin: 100px auto 50px;
-}
-
-h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-label {
-    font-size: 0.8em;
-    font-style: italic;
-}
-
-nav, footer {
-    background-color: rgb(33, 33, 33);
-}
-
-.navbarGabi div .navbar-toggler:focus {
-    border: 1px solid rgb(255,251,0);
-    box-shadow: none;
-}
-
-.navbarGabi div .navbar-toggler {
-    border: 1px solid white;
-}
-
-.navbarGabi .nav-link {
-    color: white;
-    padding-left: 10px;
-}
-
-.navbarGabi .nav-link.active {
-    color: rgb(255,251,0);
-    font-weight: bold;
-}
-
-.navbarGabi .nav-link:hover {
-    color: rgb(33,33,33);
-}
-
-.navbarGabi div .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
-}
-
-.collapse-gabi {
-    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    padding: 5px;
-}
-
-footer a {
-    margin: 5px;
-}
-
-footer a:hover {
-    border-radius: 5px;
-}
-
-p {
-    font-size: 0.8em;
-    line-height: 1.8em;
-}
-
-.logo {
-    font-size: 1em;
-    color: white;
-}
-
-.logo:hover {
-    background-color: rgb(33, 33, 33);
-    color: white;
-}
-
-.logo:focus {
-    color: white;
-}
-
-.logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.carouselGabi {
-    padding-bottom: 80px;
-    max-width: 500px;
-}
-
-.carouselGabi img, .side-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.figure-caption-gabi {
-    color: white;
-    font-size: 0.5em;
-    font-style: italic;
-}
-
-.card-gabi {
-    margin: 20px;
-}
-
-.card-gabi img {
-    filter: brightness(40%);    
-}
-
-.card-gabi .card-title, .card-gabi .card-text {
-    color: white;
-}
-
-.formGabi {
-    margin: 50px auto 100px;
-    text-align: right;
-}
-
-.formGabi .form-control:focus {
-    box-shadow: 0 0 0 .25rem rgba(255,255,255,.25);
-}
-
-.textareaGabi {
-     height: 100px !important;
-}
-
-.btnGabi {
-    border: 1px solid rgb(255,251,0);
-    color:  rgb(255,251,0);
-    margin: 20px 0px;
-}
-
-.btnGabi:hover {
-    background-color: rgb(255,251,0);
-    color: rgb(33,33,33);
-}
-
-.portfolio {
-    height: 250px;
-    width: 250px;
-}
-
-a:hover.portfolio {
-    background-color:  rgb(255,251,0);    
-}
-
-p.home {
-    font-size: 1em;
-    line-height: 1.8em;
-    margin-bottom: 80px;
-}
-
-/* MEDIA QUERIES -------*/
-
-/* -lg Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .collapse-gabi {
-    box-shadow: none;
-    }
-
-    .carouselGabi {
-        margin-top: 10vh;
-    }
-}
-
-/* -xl X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .card-gabi div p {
-        line-height: 1.5em;
-        font-size: 0.7em;
-    }
-}
+/*# sourceMappingURL=style.css.map */

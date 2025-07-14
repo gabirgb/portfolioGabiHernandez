@@ -1,0 +1,119 @@
+/* Typografía
+font-family: "Montserrat", sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Mobile first
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+body {
+    background-color: rgb(33, 33, 33);
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 20px;
+    a {
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1em;
+        padding: 0.1em;
+        &:hover {
+            background-color: rgb(255,251,0);
+            color: rgb(33, 33, 33);
+        }
+        &.active {
+            color: rgb(255, 251, 0);
+        }
+        &.portfolio {
+            background-color:  rgb(255,251,0);   
+        }
+    }
+    h1 {
+        font-size: 2.5em;
+        font-weight: 300;
+        margin: 100px auto 50px;
+        span {
+            color: rgb(255, 251, 0);
+        }
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    header {
+        nav {
+            background-color: rgb(33, 33, 33);
+
+            div {
+                a {
+                    font-size: 1em;
+                    color: white;
+                    &:hover {
+                        background-color: rgb(33, 33, 33);
+                        color: white;
+                    }
+                    &:focus {
+                        color: white;
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 10px;
+                    }
+                }
+                .navbar-toggler {
+                    border: 1px solid white;
+                    &:focus {
+                        border: 1px solid rgb(255,251,0);
+                        box-shadow: none;
+                    }
+                    
+                }
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+                }
+                .navbar-collapse {
+                    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
+                }
+            }
+            .navbar-nav {
+                .nav-link {
+                    color: white;
+                    padding-left: 10px;
+                    &.active {
+                        color: rgb(255,251,0);
+                        font-weight: bold;
+                    }
+                    &hover {
+                        color: rgb(33,33,33);
+                    }
+                }
+            }
+        }
+    }
+    
+    label {
+        font-size: 0.8em;
+        font-style: italic;
+    }
+    footer {
+        background-color: rgb(33, 33, 33);
+        padding: 5px;
+        a {
+            margin: 5px;
+            &:hover {
+                border-radius: 5px;
+            }
+        }
+    }
+    p {
+    font-size: 0.8em;
+    line-height: 1.8em;
+    &.home {
+        font-size: 1em;
+        line-height: 1.8em;
+        margin-bottom: 80px;
+    }
+}
+}
