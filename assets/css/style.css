@@ -1,111 +1,18 @@
-@charset "UTF-8";
-/* Typografía
-font-family: "Montserrat", sans-serif;
-*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* CSS Mobile first
-X-Small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-body {
-  background-color: rgb(33, 33, 33);
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 20px;
-}
-body a {
-  text-decoration: none;
-  background-color: transparent;
-  color: white;
-  font-size: 1em;
-  padding: 0.1em;
-}
-body a:hover {
-  background-color: rgb(255, 251, 0);
-  color: rgb(33, 33, 33);
-}
-body a.active {
-  color: rgb(255, 251, 0);
-}
-body a.portfolio {
-  background-color: rgb(255, 251, 0);
-}
-body h1 {
-  font-size: 2.5em;
-  font-weight: 300;
-  margin: 100px auto 50px;
-}
-body h1 span {
-  color: rgb(255, 251, 0);
-}
-body h2 {
-  font-size: 1.5em;
-  font-weight: 600;
-}
-body header nav {
-  background-color: rgb(33, 33, 33);
-}
-body header nav div a {
-  font-size: 1em;
-  color: white;
-}
-body header nav div a:hover {
-  background-color: rgb(33, 33, 33);
-  color: white;
-}
-body header nav div a:focus {
-  color: white;
-}
-body header nav div a img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-body header nav div .navbar-toggler {
-  border: 1px solid white;
-}
-body header nav div .navbar-toggler:focus {
-  border: 1px solid rgb(255, 251, 0);
-  box-shadow: none;
-}
-body header nav div .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
-}
-body header nav div .navbar-collapse {
-  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
-}
-body header nav .navbar-nav .nav-link {
-  color: white;
-  padding-left: 10px;
-}
-body header nav .navbar-nav .nav-link.active {
-  color: rgb(255, 251, 0);
-  font-weight: bold;
-}
-body header nav .navbar-nav .nav-linkhover {
-  color: rgb(33, 33, 33);
-}
-body label {
-  font-size: 0.8em;
-  font-style: italic;
-}
-body footer {
-  background-color: rgb(33, 33, 33);
-  padding: 5px;
-}
-body footer a {
-  margin: 5px;
-}
-body footer a:hover {
-  border-radius: 5px;
-}
-body p {
-  font-size: 0.8em;
-  line-height: 1.8em;
-}
-body p.home {
-  font-size: 1em;
-  line-height: 1.8em;
-  margin-bottom: 80px;
-}
+/* Error: There is no module with the namespace "variables".
+ *    ,
+ * 15 |     border: 1px solid variables.$colorAmarillo;
+ *    |                       ^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   assets\scss\partials\components\_forms.scss 15:23  @use
+ *   assets\scss\main.scss 11:1                         root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: There is no module with the namespace "variables".\a    \2577 \a 15 \2502      border: 1px solid variables.$colorAmarillo;\d\a    \2502                        ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   assets\\scss\\partials\\components\\_forms.scss 15:23  @use\a   assets\\scss\\main.scss 11:1                         root stylesheet';
+}

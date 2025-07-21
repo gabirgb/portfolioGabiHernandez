@@ -1,0 +1,12 @@
+@use "../utilities/variables";
+
+footer {
+    background-color: variables.$colorPlomo;
+    padding: 5px;
+    a {
+        margin: 5px;
+        &:hover {
+            border-radius: 5px;
+        }
+    }
+}
