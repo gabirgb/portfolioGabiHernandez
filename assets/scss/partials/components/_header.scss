@@ -1,52 +1,50 @@
 @use "../utilities/variables";
 
-header {
-        nav {
-            background-color: variables.$colorPlomo;
-            div {
-                a {
-                    font-size: 1em;
-                    color: variables.$colorBlanco;
-                    &:hover {
-                        background-color: variables.$colorPlomo;
-                        color: variables.$colorBlanco;
-                    }
-                    &:focus {
-                        color: variables.$colorBlanco;
-                    }
-                    img {
-                        width: 50px;
-                        height: 50px;
-                        margin-right: 10px;
-                    }
-                }
-                .navbar-toggler {
-                    border: 1px solid variables.$colorBlanco;
-                    &:focus {
-                        border: 1px solid variables.$colorAmarillo;
-                        box-shadow: none;
-                    }
-                    
-                }
-                .navbar-toggler-icon {
-                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
-                }
-                .navbar-collapse {
-                    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
-                }
+nav {
+    background-color: variables.$colorPlomo;
+    div {
+        a.navbar-brand {
+            font-size: 1em;
+            color: variables.$colorBlanco;
+            &:hover {
+                background-color: variables.$colorPlomo;
+                color: variables.$colorBlanco;
             }
-            .navbar-nav {
-                .nav-link {
-                    color: variables.$colorBlanco;
-                    padding-left: 10px;
-                    &.active {
-                        color: variables.$colorAmarillo;
-                        font-weight: bold;
-                    }
-                    &hover {
-                        color: variables.$colorPlomo;
-                    }
-                }
+            &:focus {
+                color: variables.$colorBlanco;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+        }
+        .navbar-toggler {
+            border: 1px solid variables.$colorBlanco;
+            &:focus {
+                border: 1px solid variables.$colorAmarillo;
+                box-shadow: none;
+            }
+            
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+        }
+        .navbar-collapse {
+            box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            color: variables.$colorBlanco;
+            padding-left: 10px;
+            &.active {
+                color: variables.$colorAmarillo;
+                font-weight: bold;
+            }
+            &hover {
+                color: variables.$colorPlomo;
             }
         }
     }
+}

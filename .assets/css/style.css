@@ -102,47 +102,47 @@ p.home {
     font-size: 0.7em;
   }
 }
-nav {
+header nav {
   background-color: rgb(33, 33, 33);
 }
-nav div a.navbar-brand {
+header nav div a {
   font-size: 1em;
   color: rgb(255, 255, 255);
 }
-nav div a.navbar-brand:hover {
+header nav div a:hover {
   background-color: rgb(33, 33, 33);
   color: rgb(255, 255, 255);
 }
-nav div a.navbar-brand:focus {
+header nav div a:focus {
   color: rgb(255, 255, 255);
 }
-nav div a.navbar-brand img {
+header nav div a img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-nav div .navbar-toggler {
+header nav div .navbar-toggler {
   border: 1px solid rgb(255, 255, 255);
 }
-nav div .navbar-toggler:focus {
+header nav div .navbar-toggler:focus {
   border: 1px solid rgb(255, 251, 0);
   box-shadow: none;
 }
-nav div .navbar-toggler-icon {
+header nav div .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
 }
-nav div .navbar-collapse {
+header nav div .navbar-collapse {
   box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
 }
-nav .navbar-nav .nav-link {
+header nav .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
   padding-left: 10px;
 }
-nav .navbar-nav .nav-link.active {
+header nav .navbar-nav .nav-link.active {
   color: rgb(255, 251, 0);
   font-weight: bold;
 }
-nav .navbar-nav .nav-linkhover {
+header nav .navbar-nav .nav-linkhover {
   color: rgb(33, 33, 33);
 }
 
