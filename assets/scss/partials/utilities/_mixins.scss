@@ -1,0 +1,30 @@
+// Tecnicas
+@mixin tecnicas ($icono, $color, $bg-color) {
+    font-size: 0.6em;
+    color: $color;
+    border-radius: 10px;
+    background-color: rgba($bg-color,0.5);
+    display: inline-block;
+    padding: 0 15px 0 0;
+    &::before {
+        font-family: 'Font Awesome 6 Free';
+        font-size: 12px;
+        font-weight: 900;
+        margin: auto 5px auto 10px;
+        content: $icono; /* Código del ícono */
+    }
+}
+
+// Botones
+@mixin botones ($color, $bg-color) {
+    font-size: 0.8em;
+    margin: 20px 0px;
+    border: 1px solid $color;
+    color:  $color;
+    background-color: $bg-color;
+    display: flex;
+    &:hover {
+        color: $bg-color;
+        background-color: $color;
+    }
+}

@@ -1,0 +1,8 @@
+@use "../utilities/variables";
+
+body {
+    background-color: variables.$colorPlomo;
+    font-family: "Montserrat", sans-serif;
+    color: variables.$colorBlanco;
+    font-size: 20px;
+}

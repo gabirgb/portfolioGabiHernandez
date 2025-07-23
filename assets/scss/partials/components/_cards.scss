@@ -1,11 +1,39 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
 .card-gabi {
     margin: 20px;
-}
-
-.card-gabi img {
+    .card-text {
+        color: variables.$colorBlanco;
+        line-height: 1.3em;
+        font-size: 0.7em;
+    }
+    .card-title {
+    @extend .card-text;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .card-update {
+        font-size: 0.6em;
+    }
+    img {
     filter: brightness(40%);    
+    }
 }
 
-.card-gabi .card-title, .card-gabi .card-text {
-    color: white;
+// Uso del mixin en clases
+.tecnica-collage {
+  @include mixins.tecnicas ("\f0c4", white, #e76f51);
+}
+
+.tecnica-tinta {
+  @include mixins.tecnicas ("\f5ad", white, #f4a261);
+}
+
+.tecnica-mixta {
+    @include mixins.tecnicas ("\f3cb", white, #e9c46a);
+}
+
+.tecnica-crayon {
+    @include mixins.tecnicas ("\f304", white, #2a9d8f);
 }

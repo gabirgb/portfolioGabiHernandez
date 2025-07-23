@@ -9,6 +9,8 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
   <!-- CSS Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Animate.Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- CSS Propio -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
@@ -20,7 +22,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbarGabi">
       <div class="container-fluid d-flex justify-content-between">
         <div>
-          <a class="navbar-brand logo" href="#">
+          <a class="navbar-brand" href="#">
             <img src="./assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" width="30" height="24"
               class="d-inline-block align-text-middle" />Gabi Hernandez
           </a>
@@ -31,7 +33,7 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse collapse-gabi" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" title="home" href="#">home</a>
               <a class="nav-link" title="about me" href="./pages/aboutMe.html">about me</a>
@@ -48,16 +50,23 @@
     <section class="container">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-8 col-xl-8">
-          <h1>
+          <h1 class="animate__animated animate__fadeIn">
             Hi, I'm <span>Gabriela</span>, a visual artist located in
             <span>Argentina</span>
           </h1>
-          <p class="home">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <p class="home">I’m Gabriela—visual artist, illustrator, and painter. My work is born from a need to explore
+            the world around me and transform it through the sensitive lens of art. Every stroke, every splash of color,
+            every texture is a form of dialogue between the inner and outer worlds, between reality and imagination.</p>
+          <p>My art draws from the everyday—from simple gestures, from emotions that move through the body and translate
+            into visual forms. I’m drawn to the symbolic, the intuitive, the things that can’t always be explained with
+            words but emerge powerfully through images. I paint to discover, to connect, to provoke questions.</p>
+          <p>I work with a variety of techniques and materials, from pencil and ink to acrylics, collage, and
+            three-dimensional elements. I love to experiment, to break boundaries, to blend the traditional with the
+            contemporary. Each piece is a search, a process, a story revealed in layers.</p>
+          <p>This site is a window into my creative universe. Here I share my artworks, my processes, my questions, and
+            my discoveries. I invite you to explore it with curiosity, with pause, with openness. I hope you find
+            something that resonates, that inspires, that connects.</p>
+          <p>Thank you for being here.</p>
         </div>
         <div class="col-12 col-md-12 col-lg-4 col-xl-4">
           <div id="carouselExampleSlidesOnly" class="carousel slide carouselGabi" data-bs-ride="carousel"
@@ -87,7 +96,7 @@
       </div>
     </section>
   </main>
-  <footer class="container-fluid fixed-bottom">
+  <footer class="container-fluid">
     <div class="row">
       <div class="col-12 text-center">
         <a title="Send me an Email" href="mailto:info@gabihernandez.com.ar" target="_blank"><i

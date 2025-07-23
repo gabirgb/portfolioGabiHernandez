@@ -1,6 +1,7 @@
 // Base
 @use "./partials/base/reset";
 @use "./partials/base/fonts";
+@use "./partials/base/body";
 
 // Components
 @use "./partials/components/general";
@@ -9,3 +10,5 @@
 @use "./partials/components/cards";
 @use "./partials/components/carousel";
 @use "./partials/components/forms";
+@use "./partials/components/queries";
+@use "./partials/components/buttons";

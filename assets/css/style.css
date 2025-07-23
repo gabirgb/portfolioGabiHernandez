@@ -8,10 +8,6 @@ font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
-/* CSS Mobile first
-X-Small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap */
-/* Nesting */
 body {
   background-color: rgb(33, 33, 33);
   font-family: "Montserrat", sans-serif;
@@ -19,6 +15,9 @@ body {
   font-size: 20px;
 }
 
+/* CSS Mobile first
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
 a {
   text-decoration: none;
   background-color: transparent;
@@ -58,13 +57,6 @@ h2 {
   font-weight: 600;
 }
 
-input.boton {
-  background-color: rgb(255, 251, 0);
-  padding: 10px;
-  color: rgb(33, 33, 33);
-  border: none;
-}
-
 label {
   font-size: 0.8em;
   font-style: italic;
@@ -85,25 +77,9 @@ p.home {
   width: 250px;
 }
 
-/* MEDIA QUERIES -------*/
-/* -lg Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .collapse-gabi {
-    box-shadow: none;
-  }
-  .carouselGabi {
-    margin-top: 10vh;
-  }
-}
-/* -xl X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .card-gabi div p {
-    line-height: 1.5em;
-    font-size: 0.7em;
-  }
-}
 nav {
   background-color: rgb(33, 33, 33);
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
 }
 nav div a.navbar-brand {
   font-size: 1em;
@@ -131,9 +107,6 @@ nav div .navbar-toggler:focus {
 nav div .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
 }
-nav div .navbar-collapse {
-  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
-}
 nav .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
   padding-left: 10px;
@@ -142,7 +115,7 @@ nav .navbar-nav .nav-link.active {
   color: rgb(255, 251, 0);
   font-weight: bold;
 }
-nav .navbar-nav .nav-linkhover {
+nav .navbar-nav .nav-link:hover {
   color: rgb(33, 33, 33);
 }
 
@@ -160,13 +133,84 @@ footer a:hover {
 .card-gabi {
   margin: 20px;
 }
-
+.card-gabi .card-text, .card-gabi .card-title {
+  color: rgb(255, 255, 255);
+  line-height: 1.3em;
+  font-size: 0.7em;
+}
+.card-gabi .card-title {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.card-gabi .card-update {
+  font-size: 0.6em;
+}
 .card-gabi img {
   filter: brightness(40%);
 }
 
-.card-gabi .card-title, .card-gabi .card-text {
+.tecnica-collage {
+  font-size: 0.6em;
   color: white;
+  border-radius: 10px;
+  background-color: rgba(231, 111, 81, 0.5);
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+.tecnica-collage::before {
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  font-weight: 900;
+  margin: auto 5px auto 10px;
+  content: "\f0c4"; /* Código del ícono */
+}
+
+.tecnica-tinta {
+  font-size: 0.6em;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(244, 162, 97, 0.5);
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+.tecnica-tinta::before {
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  font-weight: 900;
+  margin: auto 5px auto 10px;
+  content: "\f5ad"; /* Código del ícono */
+}
+
+.tecnica-mixta {
+  font-size: 0.6em;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(233, 196, 106, 0.5);
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+.tecnica-mixta::before {
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  font-weight: 900;
+  margin: auto 5px auto 10px;
+  content: "\f3cb"; /* Código del ícono */
+}
+
+.tecnica-crayon {
+  font-size: 0.6em;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(42, 157, 143, 0.5);
+  display: inline-block;
+  padding: 0 15px 0 0;
+}
+.tecnica-crayon::before {
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  font-weight: 900;
+  margin: auto 5px auto 10px;
+  content: "\f304"; /* Código del ícono */
 }
 
 .carouselGabi {
@@ -184,23 +228,58 @@ footer a:hover {
   margin: 50px auto 100px;
   text-align: right;
 }
-
 .formGabi .form-control:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 0.25rem rgb(255, 251, 0);
 }
-
-.textareaGabi {
+.formGabi textarea {
   height: 100px !important;
+  border: none;
+}
+.formGabi input {
+  padding: 10px;
+  color: rgb(33, 33, 33);
+  border: none;
 }
 
-.btnGabi {
+/* -lg Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .carouselGabi {
+    margin-top: 15vh;
+  }
+}
+/* -xl X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card-gabi div p {
+    line-height: 1.5em;
+    font-size: 0.7em;
+  }
+}
+/* Contact form - SEND*/
+.btn-enviar {
+  font-size: 0.8em;
+  margin: 20px 0px;
   border: 1px solid rgb(255, 251, 0);
   color: rgb(255, 251, 0);
-  margin: 20px 0px;
+  background-color: rgb(33, 33, 33);
+  display: flex;
 }
-.btnGabi:hover {
-  background-color: rgb(255, 251, 0);
+.btn-enviar:hover {
   color: rgb(33, 33, 33);
+  background-color: rgb(255, 251, 0);
+}
+
+/* Portfolio - ZOOM IN */
+.btn-zoom {
+  font-size: 0.8em;
+  margin: 20px 0px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 33, 33);
+  display: flex;
+}
+.btn-zoom:hover {
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */

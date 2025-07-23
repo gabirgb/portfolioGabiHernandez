@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Gabriela</h1>
+<h1 class="animate__animated animate__fadeIn" align="center">Hi 👋, I'm Gabriela</h1>
 <h3 align="center">An intermediate developer from Argentina trying to improve her skills.</h3>
 
 - 🔭 I’m currently working on **my visual arts portfolio.**

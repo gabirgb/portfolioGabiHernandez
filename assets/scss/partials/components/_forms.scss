@@ -3,22 +3,19 @@
 .formGabi {
     margin: 50px auto 100px;
     text-align: right;
-}
 
-.formGabi .form-control:focus {
-    box-shadow: 0 0 0 .25rem rgba(255,255,255,.25);
-}
+    .form-control:focus {
+        box-shadow: 0 0 0 .25rem variables.$colorAmarillo ;
+    }
 
-.textareaGabi {
-     height: 100px !important;
-}
+    textarea {
+        height: 100px !important;
+        border: none;
+    }
 
-.btnGabi {
-    border: 1px solid variables.$colorAmarillo;
-    color:  variables.$colorAmarillo;
-    margin: 20px 0px;
-    &:hover {
-        background-color: variables.$colorAmarillo;
+    input {
+        padding: 10px;
         color: variables.$colorPlomo;
+        border: none;
     }
 }

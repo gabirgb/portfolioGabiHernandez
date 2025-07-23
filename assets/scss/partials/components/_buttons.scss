@@ -1,0 +1,13 @@
+ @use "../utilities/variables";
+ @use "../utilities/mixins";
+
+ /* Contact form - SEND*/
+.btn-enviar {
+    @include mixins.botones (variables.$colorAmarillo, variables.$colorPlomo);
+}
+
+
+/* Portfolio - ZOOM IN */
+.btn-zoom {
+    @include mixins.botones (variables.$colorBlanco, variables.$colorPlomo)
+}

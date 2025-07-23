@@ -1,0 +1,14 @@
+/* -lg Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carouselGabi {
+        margin-top: 15vh;
+    }
+}
+
+/* -xl X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card-gabi div p {
+        line-height: 1.5em;
+        font-size: 0.7em;
+    }
+}

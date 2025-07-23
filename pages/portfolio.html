@@ -9,6 +9,8 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- CSS Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animate.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS Propio -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
@@ -20,7 +22,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbarGabi">
             <div class="container-fluid d-flex justify-content-between">
                 <div>
-                    <a class="navbar-brand logo" href="#">
+                    <a class="navbar-brand" href="#">
                         <img src="../assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" width="30" height="24"
                             class="d-inline-block align-text-middle" />Gabi Hernandez
                     </a>
@@ -31,7 +33,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse collapse-gabi" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" title="home" href="../index.html">home</a>
                             <a class="nav-link" title="about me" href="../pages/aboutMe.html">about me</a>
@@ -48,19 +50,20 @@
         <section class="container mb-5">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-8 col-xl-8">
-                    <h1>Lorem ipsum dolor <span>sit amet quis</span> nostrud</h1>
+                    <h1 class="animate__animated animate__fadeIn">My <span>artwork</span></h1>
                 </div>
             </div>
             <div class="row">
+                <!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <!-- Card inicio -->
-                    <div class="card text-bg-dark card-gabi card-gabi">
+                    <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/01.png" class="card-img" alt="Portfolio 1">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Falda colorida</h5>
+                            <p class="card-text">Convoca la calides de los colores norteños.</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-crayon">Soft chalks</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
@@ -69,102 +72,104 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/02.png" class="card-img" alt="Portfolio 2">
-                        <div class="card-img-overlay card-img-overlay-gabi">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">El helado</h5>
+                            <p class="card-text">La mirada de un niño perdida en un helado.</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-tinta">Ink drawing</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/03.png" class="card-img" alt="Portfolio 3">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">El amuleto</h5>
+                            <p class="card-text">This is a wider card with supporting text below.</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-collage">Collage</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/04.png" class="card-img" alt="Portfolio 4">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">El viaje sin rumbo</h5>
+                            <p class="card-text">This is a wider card with supporting text below.
+                            </p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-collage">Collage</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/05.png" class="card-img" alt="Portfolio 5">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">The journey</h5>
+                            <p class="card-text">This is a wider card with supporting text below.</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-mixta">Mixed media</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/06.png" class="card-img" alt="Portfolio 6">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">To cage a lion</h5>
+                            <p class="card-text">This is a wider card with supporting text below.</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-mixta">Mixed media</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/07.png" class="card-img" alt="Portfolio 7">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">El viaje de las cholitas</h5>
+                            <p class="card-text">This is a wider card with supporting text below.</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-collage">Collage</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/08.png" class="card-img" alt="Portfolio 8">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Cóncavo - Convexo</h5>
+                            <p class="card-text">This is a wider card with supporting text below..</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-tinta">Ink drawing</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
-                <!-- Card fin -->
-                <!-- Card inicio -->
+                <!-- Card fin --><!-- Card inicio -->
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card text-bg-dark card-gabi">
                         <img src="../assets/images/09.png" class="card-img" alt="Portfolio 9">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">El sueño de los gatos</h5>
+                            <p class="card-text">This is a wider card with supporting text below..</p>
+                            <button type="button" class="btn btn-zoom">Zoom in</button>
+                            <p class="tecnica-tinta">Ink drawing</p>
+                            <p class="card-update">Last updated 3 mins ago</p>
                         </div>
                     </div>
                 </div>
@@ -173,7 +178,7 @@
             </div>
         </section>
     </main>
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10 text-center">

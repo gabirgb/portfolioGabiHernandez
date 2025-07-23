@@ -9,6 +9,8 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- CSS Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Animate.Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS Propio -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
@@ -20,7 +22,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbarGabi">
             <div class="container-fluid d-flex justify-content-between">
                 <div>
-                    <a class="navbar-brand logo" href="#">
+                    <a class="navbar-brand" href="#">
                         <img src="../assets/images/logo-gh-white.png" alt="Logo Gabi Hernandez" width="30" height="24"
                             class="d-inline-block align-text-middle" />Gabi Hernandez
                     </a>
@@ -31,7 +33,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse collapse-gabi" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" title="home" href="../index.html">home</a>
                             <a class="nav-link" title="about me" href="../pages/aboutMe.html">about me</a>
@@ -48,7 +50,7 @@
         <section class="container">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-8 col-xl-8">
-                    <h1>Lorem ipsum dolor <span>sit amet</span></h1>
+                    <h1 class="animate__animated animate__fadeIn">Contact <span>me</span></h1>
                 </div>
             </div>
             <div class="row">
@@ -89,12 +91,12 @@
                                     <label for="floatingInputValue">Email</label>
                                 </div>
                                 <div class="form-floating">
-                                    <textarea class="form-control textareaGabi" placeholder="Leave a comment here"
+                                    <textarea class="form-control" placeholder="Leave a comment here"
                                         id="floatingTextarea"></textarea>
                                     <label for="floatingTextarea">Comments</label>
                                 </div>
                                 <div class="form-floating">
-                                    <button type="button" class="btn btnGabi">Send</button>
+                                    <button type="button" class="btn btn-enviar">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -105,7 +107,7 @@
         </section>
     </main>
 
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10 text-center">
