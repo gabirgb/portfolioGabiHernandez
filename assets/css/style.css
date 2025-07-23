@@ -77,6 +77,11 @@ p.home {
   width: 250px;
 }
 
+.mapa {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 nav {
   background-color: rgb(33, 33, 33);
   box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
@@ -110,6 +115,7 @@ nav div .navbar-toggler-icon {
 nav .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
   padding-left: 10px;
+  border-radius: 5px;
 }
 nav .navbar-nav .nav-link.active {
   color: rgb(255, 251, 0);
@@ -118,13 +124,21 @@ nav .navbar-nav .nav-link.active {
 nav .navbar-nav .nav-link:hover {
   color: rgb(33, 33, 33);
 }
+nav .navbar-nav .nav-link img {
+  width: 20px;
+  animation: wapp-beat 3s ease 0s infinite normal forwards;
+}
 
 footer {
   background-color: rgb(33, 33, 33);
   padding: 5px;
 }
+footer span {
+  font-size: 0.6em;
+}
 footer a {
   margin: 5px;
+  vertical-align: middle;
 }
 footer a:hover {
   border-radius: 5px;
@@ -225,7 +239,7 @@ footer a:hover {
 }
 
 .formGabi {
-  margin: 50px auto 100px;
+  margin: 20px auto 100px;
   text-align: right;
 }
 .formGabi .form-control:focus {
@@ -280,6 +294,33 @@ footer a:hover {
 .btn-zoom:hover {
   color: rgb(33, 33, 33);
   background-color: rgb(255, 255, 255);
+}
+
+@keyframes wapp-beat {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1); /* Mantiene el estado final durante la pausa */
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

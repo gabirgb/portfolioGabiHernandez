@@ -36,12 +36,17 @@ nav {
         .nav-link {
             color: variables.$colorBlanco;
             padding-left: 10px;
+            border-radius: 5px;
             &.active {
                 color: variables.$colorAmarillo;
                 font-weight: bold;
             }
             &:hover {
                 color: variables.$colorPlomo;
+            }
+            img {
+                width: 20px;
+                animation: wapp-beat 3s ease 0s infinite normal forwards;
             }
         }
     }
